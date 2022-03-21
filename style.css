@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+    --light-grey: #E5E5E5;
+    --text-grey: #A9A9A9;
+    --text-grey-bold: #4E5150; 
+
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 20px 0 8px 0;
+    color: var(--text-grey-bold);
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 0 32px 0;
+    color: var(--text-grey);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.profile-container .profile-photo {
+    width: 156px;
+    height: 156px;
+    border-radius: 16px;
+    background-image: url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+
+}
+
+.profile-info {
+    background: var(--light-grey);
+    margin: auto 12px;
+}
+
+.profile-container .profile-social {
+    display: flex;
+}
+
+.profile-container .profile-social .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 100px;
+    height: 67px;
+}
+
+.profile-container .profile-social .profile-info p {
+    margin: 0;
+}
+
+.info-number {
+    color: var(--text-grey-bold);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info-text {
+    color: var(--text-grey);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.grid-gallery {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 12px;
+    grid-template-areas:
+        "photo-01 photo-02 photo-02"
+        "photo-03 photo-03 photo-04"
+        "photo-05 photo-05 photo-04"   
+    
+    ;
+
+}
+
+.photo-01{
+    grid-area: photo-01;
+    background-image: url(https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80);
+    background-size: cover;
+    border-radius: 12px;
+}
+.photo-02{
+    grid-area: photo-02;
+    background-image: url(https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80);
+    background-size: cover;
+    border-radius: 12px;
+}
+.photo-03{
+    grid-area: photo-03;
+    background-image: url(https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    background-size: cover;
+    border-radius: 12px;
+    
+}
+.photo-04{
+    grid-area: photo-04;
+    background-image: url(https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    border-radius: 12px;
+}
+.photo-05{
+    grid-area: photo-05;
+    background-image: url(https://images.unsplash.com/photo-1633109870201-318921e3f992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    background-size: cover;
+    border-radius: 12px;
+}
