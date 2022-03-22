@@ -92,9 +92,9 @@ h4 {
 
 
 .grid-gallery {
-    width: fit-content;
+    width: 50%;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
     gap: 12px;
     grid-template-areas:
